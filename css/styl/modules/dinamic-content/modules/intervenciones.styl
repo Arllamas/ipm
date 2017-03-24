@@ -1,0 +1,288 @@
+// Quitar estilos por defecto del navegador 
+input[type="datetime-local"]{
+	-webkit-appearance none
+	-moz-appearance none
+}
+
+// Bloque que aparece aparece en la ventana de confirmación de preventivos y lavados para todas las unidades
+.container-mat
+	display inline-block
+	width 83px
+	vertical-align middle
+
+.container-lav, .container-prev
+	width auto
+	display inline-block
+	vertical-align middle
+	margin-right 5px
+	&-label
+		padding-right 8px
+.container-prev
+	margin-bottom 10px	
+	
+.container-ckm
+	width 137px
+	display inline-block
+	vertical-align middle
+	margin-right 5px
+	margin-bottom 3px	
+
+// Bloque de campos genericos para todas las fIntervenciones
+// FECHA | UNIDAD | MATRICULA | KILOMETROS
+.fIntervenciones-general-list
+	text-align: justify;
+	text-justify: distribute-all-lines; /* distribute items in IE */
+	list-style-type: none;
+	box-sizing border-box
+	border-bottom 1px dashed stone_gray
+	margin-bottom 20px
+	font-size 0px
+	&:after 
+		content: "";
+		display: inline-block;
+		width: 100%;
+	&-item
+		width 24%
+		display inline-block
+		vertical-align top
+		text-align left
+		zoom: 1;
+		font-size 16px
+		
+.container-fDetalleInterv 
+	margin-bottom 9px
+// Bloque de campos para el detalle de las reparaciones
+// ELEMENTO | ESPECIFICACION | ACCION | REPUESTOS
+
+.fDetalleInterv-list
+	text-align: justify;
+	text-justify: distribute-all-lines; /* distribute items in IE */
+	list-style-type: none;
+	box-sizing border-box
+	font-size 0px
+	&:after 
+		content: "";
+		display: inline-block;
+		width: 100%;
+		padding 0
+	&-item
+		width 24%
+		display inline-block
+		vertical-align top
+		text-align left
+		zoom: 1;
+		font-size 16px
+		margin-bottom 10px
+.label-variable
+	display none
+		
+
+.fIntervenciones-btm_detalle
+	text-align: right;
+	text-justify: distribute-all-lines; /* distribute items in IE */
+	list-style-type: none;
+	box-sizing border-box
+	margin-right 2px
+	font-size 0px
+	margin-top 0px
+	&.hidden
+		display none
+	&:after 
+		content: "";
+		display: inline-block;
+		width: 100%;
+	&-item
+		display inline-block
+		vertical-align top
+		text-align left
+		zoom: 1;
+		font-size 16px
+
+// Resto de bloques
+// TIPO | LUGAR | CORRECTIVOS | PREVENTIVOS | DESPLAZAMIENTOS
+.container-fIntervenciones
+	float left
+	width 100%
+	display block
+	text-align: justify;
+	text-justify: distribute-all-lines; /* distribute items in IE */
+	list-style-type: none;
+	box-sizing border-box
+	font-size 0px
+
+	&:after 
+		content: "";
+		display: inline-block;
+		width: 100%;
+		
+.fIntervenciones-tipo-list, .fIntervenciones-lugarReparacion-list, .fIntervenciones-correctivos-list, .fIntervenciones-desplazamiento-list, .fIntervenciones-preventivas-list
+	display inline-block
+	font-size 16px
+	vertical-align top
+	&.todos
+		width 24%
+		margin-left 1.31%	
+
+.fIntervenciones-desplazamiento-list
+	box-sizing border-box
+	margin-left 1.31%
+.fIntervenciones-tipo-list, .fIntervenciones-desplazamiento-list, .fIntervenciones-preventivas-list
+	width 24%
+.fIntervenciones-lugarReparacion-list
+	width 24%
+			
+// .fIntervenciones-correctivos-list
+// 	width 36%
+
+
+.fIntervenciones-desplazamiento-list.hidden 
+	display none
+
+// Estilo para el campo multiselect en SMARTPHONES Y IPHONE
+// Para la versión de escritorio utilizamos el plugin multiselect	
+.fIntervenciones-multiselect
+	position absolute
+	right 0
+	width 38%
+	padding-right 20px
+	height 27px
+	margin-right 4px
+	-webkit-appearance none
+	-moz-appearance none
+	border-radius 0
+	border 0
+	background-color marine_aqua
+	color stone_gray
+	z-index 0
+	top 4px
+	border-top 1px solid marine_aqua
+	&-icon
+		position absolute
+		right 10px
+		color stone_gray
+		top 10px
+		z-index .5
+		
+		&.hidden
+			display none
+	&.hidden
+		display none
+
+.detalle_btn_back
+	border 0
+	position absolute
+	top 4px
+	right 4px
+	background transparent
+	color marine_aqua
+	padding 0
+	padding 4px 7px 0px
+	height 27px
+	
+	
+	
+
+// Estilos cuando el ancho del browser es menor a 920px
+@media screen and (max-width: 920px)
+	.container-fIntervenciones
+		text-align justify !important
+	.fIntervenciones-tipo-list, .fIntervenciones-lugarReparacion-list, .fIntervenciones-correctivos-list, .fIntervenciones-desplazamiento-list, .fIntervenciones-preventivas-list
+		width 49.38% !important
+		margin-left 0 !important
+	.fIntervenciones-desplazamiento-list
+		margin-left 0
+		
+			
+// Estilos cuando el ancho del browser es menor a 500px
+@media screen and (max-width: 500px)
+	.container-ckm
+		display block
+		width 100%
+		box-sizing border-box
+		
+	.row-mat
+		margin-bottom 8px !important
+	.container-prev
+		float right
+		margin-right 0
+		
+	.fIntervenciones-general-list
+		
+		text-align right
+		box-sizing: border-box;
+		border-bottom 1px dashed stone_gray
+		margin-bottom 0px
+		&-item
+			width 100%
+			display block
+			&:first-child
+				float none
+			&:nth-child(2)
+				float none
+				margin-left 0
+			&:nth-child(3)
+				float none
+				margin 0 0
+			&:nth-child(4)
+				margin-top 20px
+	.fIntervenciones-tipo-list, .fIntervenciones-lugarReparacion-list, .fIntervenciones-correctivos-list, .fIntervenciones-desplazamiento-list
+		display inline-block
+		float none
+		vertical-align top
+		margin-right 0
+	.fIntervenciones-tipo-list
+		margin-top 20px
+		
+	.fIntervenciones-desplazamiento-list.hidden 
+		display none
+		
+	.fIntervenciones-multiselect
+		position absolute
+		right 0
+		height 27px
+		margin-right 4px
+		-webkit-appearance none
+		-moz-appearance none
+		border-radius 0
+		border 0
+		background-color marine_aqua
+		color stone_gray
+
+// Estilos cuando el ancho del browser es menor a 630px
+@media screen and (max-width: 630px)
+	// Ajuste campo KM ventana modal
+	.container-ckm
+		display inline-block
+		width 100px 
+// Estilos cuando el ancho del browser es menor a 580px		
+@media screen and (max-width: 580px)
+	// Ajuste campo KM ventana modal
+	.container-ckm
+		display inline-block
+		width 60px
+		
+// Estilos cuando el ancho del browser es menor a 530px				
+@media screen and (max-width: 530px)
+	// Ajuste campo KM ventana modal
+	.container-ckm
+		display block
+		width 100% !important
+		
+	.row-mat
+		margin-bottom 8px !important
+	.container-prev
+		float right
+		margin-right 0
+	// Todos los campos ocupan el 100%
+	.fIntervenciones-tipo-list, .fIntervenciones-lugarReparacion-list, .fIntervenciones-correctivos-list, .fIntervenciones-desplazamiento-list, .fIntervenciones-preventivas-list, .fDetalleInterv-list-item
+		width 100% !important
+	.fDetalleInterv-list
+		padding-top 15px
+		margin-top 8px
+		border-top 1px dashed stone_gray
+	.container-fDetalleInterv ol:nth-child(2)
+		border-top 0
+		margin-top 0
+		padding-top 0
+	.label-variable
+		display block

@@ -1,0 +1,26 @@
+// General header styles
+
+.header
+	background royal_blue
+	border-bottom 5px solid marine_aqua
+	box-sizing border-box
+	color gray_B
+	height 73px
+	line-height 73px
+	padding 0px
+	transition .3s
+	position fixed
+	top 0
+	width 100%
+	z-index 2
+	
+	&-hidden
+		transition .3s
+		height 108px
+		
+	
+// Add header's content blocks
+
+@import "modules/header/content-blocks/logo.styl"
+@import "modules/header/content-blocks/main-nav.styl"
+@import "modules/header/content-blocks/user-area.styl"

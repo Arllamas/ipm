@@ -1,0 +1,147 @@
+// Main navigation styles
+
+.main-nav
+	display none
+	
+	&-button-dropdown
+		color stone_gray
+		font-size 22px
+		float right
+		height 73px
+		margin-right 10px
+		box-sizing border-box
+		text-decoration none		
+		padding-top 25px		
+		&.icon_close
+			display none
+		&:hover
+			background gray_dark_B
+	
+	&.is-active
+		right 0
+		
+.main-nav.desplegado
+	padding 73px 10px 10px 10px
+	display block	
+	background royal_blue
+	margin-top 0
+
+
+	
+	& .main-nav-item
+	
+		display block
+		text-align center
+		line-height 40px
+		
+	
+		
+	& .main-nav-link
+		color stone_gray
+		text-decoration none
+		font-weight bold
+		font-size .9em
+		margin 0
+		padding 0
+		display inline
+		padding 10px
+		padding-right 0
+		display block
+		line-height 20px
+		&:hover
+			background-color marine_aqua
+	
+		
+	& .main-nav-title
+		color dark_yellow
+		text-align right
+		margin 0
+		padding 0
+		border-bottom 1px solid dark_yellow
+		line-height 30px
+		
+		
+		
+		&-icon
+			margin-right 5px
+			position relative
+			top 1px			
+		
+		&:hover
+			color dark_yellow
+		
+	
+		
+
+	
+
+
+	
+		
+
+@media screen and (min-width : 767px)
+
+	.main-nav
+		display inline-block
+		
+		list-style none
+		padding 0px
+		margin 0px
+		height 100%
+		width 100%
+		text-align center
+		box-sizing border-box
+		position relative
+		top -1px
+		
+		
+		&-item
+			display inline-block
+			margin 0px
+			padding 0px
+			height 100%
+			box-sizing border-box
+			position relative
+			
+			
+			
+			
+			&.is-active
+				background-color dark_blue
+				
+			&.is-active .main-nav-link
+				color dark_yellow
+				
+			&-hover
+				position absolute
+				width 100%
+				height 0%
+				background-color dark_blue
+				transition .2s
+				
+			
+		&-link
+			color stone_gray
+			height 100% 
+			display block
+			font-size .9em
+			padding 0 10px
+			padding-top 0px
+			text-decoration none
+			text-transform uppercase
+			font-weight bold
+			
+			&:hover
+				background-color dark_blue
+				color dark_yellow
+		&-button-dropdown
+			display none !important
+			
+
+
+
+
+
+
+
+

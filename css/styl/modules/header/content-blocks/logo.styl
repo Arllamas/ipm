@@ -1,0 +1,45 @@
+// Logo styles
+
+.logo
+	font-size 55px
+	color stone_gray 
+	position absolute
+	top 0
+	// background url(img/logo4.png) no-repeat
+	// background-position center
+	left 10px
+	z-index 10
+	height 100%
+	box-sizing border-box
+	
+	& img
+		transition 1.5s
+		position relative
+		top -4px
+		transition:transform 1.5s;
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
+		-o-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1)
+		transform-origin:left center;
+		
+		&.small
+			-moz-transform: scale(.8);
+			-webkit-transform: scale(.8);
+			-o-transform: scale(.8);
+			-ms-transform: scale(.8);
+			transform: scale(.8)
+		
+		
+	&-link
+		display inline-block
+		height 100%
+		
+		width 150px
+		position absolute
+		z-index 19
+	&-text
+		display none
+		
+	

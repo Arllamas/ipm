@@ -1,0 +1,152 @@
+// // Add dependencies
+
+@import "../../nib"
+@import "../../lib/base.styl"
+@import "../../lib/icons.styl"
+@import "../../lib/fonts.styl"
+@import "../../settings.styl"
+
+
+input:-webkit-autofill { 
+    color: stone_gray !important;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px stone_gray inset;
+}
+body 
+	border-top 3px solid marine_aqua
+	background-color royal_blue
+.login
+	margin 0 auto;
+	margin-top 34px
+	width 300px
+	background url('img/logo4.png') no-repeat
+	background-position top center
+	
+	&-header
+		width 100% 
+		font .8em sans-serif
+		box-sizing border-box
+		text-align center ¿
+		background gray_dark_A
+		color gray_B
+		padding 10px
+		height 40px
+		& span
+			display none
+	&-form
+		margin 0
+		padding 0
+		list-style none	
+		width 100%
+		box-sizing border-box
+		
+		&-item
+			margin-top 0px
+			position relative
+		
+		&-input
+			box-sizing border-box
+			width 100%
+			padding 15px 10px
+			border-radius 0
+			border 0
+			background-color stone_gray
+			color royal_blue
+			padding-left 44px
+			font-size 1em
+			margin-bottom 1px
+			
+		&-label
+			position absolute
+			top 15px
+			left 10px
+			padding-right 8px
+			border-right 1px solid #CCC
+			color marine_aqua
+			height 19px
+			&-text
+				display none
+		&-buttom
+			background-color dark_yellow
+			font-weight bold
+			color royal_blue
+			text-transform uppercase
+			font-size 1.2em
+			border 0
+			border-radius 0
+			box-sizing border-box
+			width 100%
+			padding 10px 0
+			margin-top 4px
+
+
+
+::-webkit-input-placeholder
+	padding-left 0px
+	position static
+	color royal_blue
+::-moz-placeholder
+	padding-left 0px
+	position static
+	color royal_blue
+:-ms-input-placeholder
+	// padding-left 0px
+	position static 
+	color royal_blue
+input:-moz-placeholder 
+	padding-left 0px
+	position static
+	color royal_blue
+
+input:hover::-webkit-input-placeholder
+	padding-left 0px
+	transition 0s
+input:hover:-moz-placeholder
+	padding-left 0px
+	transition .3s
+input:hover::-moz-placeholder
+	padding-left 0px
+	transition .3s
+input:hover:-ms-input-placeholder
+	
+	transition .3s
+	
+input:focus::-webkit-input-placeholder
+	padding-left 0px
+input:focus:-moz-placeholder
+	padding-left 0px
+input:focus::-moz-placeholder
+	padding-left 0px
+// input:focus:-ms-input-placeholder
+	
+// Estilos de alertas
+
+
+.alert
+	display inline-block
+	padding 10px 40px
+	
+	&-list
+		margin 0
+		padding 0
+		&-item
+			margin 0
+			padding 0
+			list-style initial
+	&.error 
+		background-color #ffbaba
+		border 1px solid #DF1A24
+		border-radius 2px
+		color #DF1A24
+	&.warning 
+		background-color #FEEFB3
+		border 1px solid #9F6000
+		border-radius 2px
+		color #9F6000
+	&.success 
+		background-color #b8fcb3
+		border 1px solid #3B602A
+		border-radius 2px
+		color #3B602A
+

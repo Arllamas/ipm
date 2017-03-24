@@ -1,0 +1,88 @@
+.tIU
+	position relative
+	width 100%
+	&-body-list
+		display block
+		margin 0
+		border-top 1px dashed stone_gray
+		padding-top 15px
+	&-table
+		width 100%
+		margin-bottom 15px
+		
+		&-row
+			background-color stone_gray
+			line-height 40px
+			height 40px
+			border-bottom 5px solid royal_blue
+			color dark_blue
+			font-weight bold
+			cursor pointer
+
+			&:nth-child(2n)
+				background-color dark_yellow
+			&:last-child
+				border 0
+			
+		&-col
+			text-align left
+			font-size 1.2em
+			color royal_blue
+			width 30px
+			text-align left
+			padding-left 10px
+			border-right 2px solid royal_blue
+						
+
+
+
+
+// PARA INFORMES MANTENEDORA BORRAR EN UN FUTURO Y ADAPTAR AL CODIGO PARA TABLAS DE IU ESCRITO ARRIBA
+.tableIU
+	width 100%
+	
+	&-row
+		background-color stone_gray
+		line-height 40px
+		height 40px
+		border-bottom 5px solid royal_blue
+		color dark_blue
+		font-weight bold
+		cursor pointer
+
+		&:nth-child(2n)
+			background-color dark_yellow
+			
+		&:last-child
+			border 0
+			
+		
+	&-col
+		&:first-child
+			text-align left
+			font-size 1.2em
+			color dark_blue
+			width 30px
+			// background-color #207245
+			padding-left 10px
+			border-right 2px solid royal_blue
+			
+		&:first-child span
+			position relative
+			top 3px	
+			
+		&:nth-child(2)
+			text-align left
+			padding-left 10px
+			
+		&:last-child
+			text-align right
+			font-size .7em
+			padding-right 10px
+			
+			& span.cerrado 
+				color #830607
+				font-style italic
+			& span.abierto 
+				color royal_blue
+				font-style italic

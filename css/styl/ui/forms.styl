@@ -1,0 +1,277 @@
+// Estilos generales formulario
+
+.fIU 
+	position relative
+	width 100%
+	&-list
+		&-horizontal
+			border 1px solid red
+			height 50px
+			margin-bottom 20px
+		&.fTable-list
+			text-align left
+		&-title
+			text-align left 
+			color stone_gray
+			margin 0
+			margin-bottom 20px
+		&-item
+			
+			margin-bottom 20px
+			
+			&-left
+				border 1px solid green
+				display block
+				vertical-align top
+				float left
+				width 10%
+					
+				&-label
+					background-color marine_aqua
+					border-radius 4px
+					box-sizing border-box
+					padding  5px 12px
+					color dark_yellow
+					text-align left
+					display inline-block
+					font-size .8em
+					margin-bottom 5px
+					font-style italic
+				&-container
+					background-color marine_aqua
+					padding 4px
+					border-radius 4px
+					display inline-block
+				
+			&-right
+				border 1px solid green
+				display inline-block
+				float right
+				&-label
+					background-color marine_aqua
+					border-radius 4px
+					box-sizing border-box
+					padding  5px 12px
+					color dark_yellow
+					text-align left
+					display inline-block
+					font-size .8em
+					margin-bottom 5px
+					font-style italic
+					&-container
+						background-color marine_aqua
+						padding 4px
+						border-radius 4px
+						border 1px solid red !important
+						display inline-block
+				
+				
+			&.fTable-item
+				width 100%
+				display block
+				margin-right .7em
+			&-label
+				background-color marine_aqua
+				border-radius 4px
+				box-sizing border-box
+				padding  5px 12px
+				color dark_yellow
+				text-align left
+				display block
+				font-size .8em
+				margin-bottom 5px
+				font-style italic
+				&-btm
+					border 0
+					background-color royal_blue
+					color: #f1f1f1
+					border-radius 3px
+					position relative
+					top -3px
+					right -8px
+					padding 3px 4px
+					float right
+					&-2
+						border 0
+						background-color dark_yellow
+						color royal_blue
+						border-radius 3px
+						float right
+						padding 3px 4px
+						margin-bottom -11px
+						
+			&-container
+				background-color marine_aqua
+				padding 4px
+				border-radius 4px
+				position relative
+				&.radio
+					text-align: left
+					margin-bottom .2em
+				&:last-child
+					margin-bottom 0
+					
+			&-input
+				display block
+				width 	100%
+				box-sizing border-box
+				height 27px
+				color marine_aqua
+				transition opacity .3s
+			&-radio
+				
+				display inline-block
+				position absolute
+				left 12px
+				line-height 27px
+				height 27px
+				
+				&-label
+					display inline-block
+					background-color white
+					box-sizing border-box
+					height 27px
+					line-height 27px
+					color marine_aqua
+					width 100%
+					padding-left 27px
+					cursor pointer
+					// transition opacity .3s
+					
+			&-textarea
+				transition opacity .3s
+				display block
+				width 	100%
+				max-width 100%
+				box-sizing border-box
+				height 50px
+				max-height 50px
+				resize none
+				color marine_aqua
+			&-select
+				background-color white
+				display block
+				width 	100%
+				box-sizing border-box
+				height 27px
+				border 1px solid transparent
+				color marine_aqua
+				transition opacity .3s
+			&-btm
+				background-color royal_blue
+				border 0
+				border-radius 4px
+				color stone_gray
+				font-size 1.3em
+				padding 6px 8px 6px 8px	
+				position absolute
+				right 0
+				bottom -50px
+
+.input-disabled
+	transition opacity .3s
+	opacity .5
+	
+.input-error
+	background #DF1A24
+.input-warning
+	background #F2DA4D
+	
+
+// Estilos de validación
+
+
+// Estilos de alertas
+
+
+.alert
+	display inline-block
+	padding 10px 40px
+	
+	&-list
+		margin 0
+		padding 0
+		&-item
+			margin 0
+			padding 0
+			list-style initial
+	&.error 
+		background-color #ffbaba
+		border 1px solid #DF1A24
+		border-radius 2px
+		color #DF1A24
+	&.warning 
+		background-color #FEEFB3
+		border 1px solid #9F6000
+		border-radius 2px
+		color #9F6000
+	&.success 
+		background-color #b8fcb3
+		border 1px solid #3B602A
+		border-radius 2px
+		color #3B602A
+
+
+.dialog
+	&-listCorrec
+		padding 0
+		margin 0
+		list-style circle
+		& .dialog-list-item
+			list-style circle
+			margin 0
+			padding 0
+			margin-left 30px
+	&-listPrev
+		padding 0
+		margin 0
+		list-style circle
+		& .dialog-list-item
+			list-style circle
+			margin 0
+			padding 0
+			margin-left 30px
+	&-list
+		color plaintext
+		margin 0
+		padding 0
+		&-item
+			box-sizing: border-box;
+			margin 0
+			padding 0 10px
+		&-title
+			background-color dark_yellow
+			margin 0
+			height 27px
+			line-height 27px
+			margin-top 20px
+			margin-bottom 10px
+			padding 0 10px
+			&:first-child
+				margin-top 0
+		
+	&-confirm-btm
+		border 1px solid #37A84D !important
+		background-color #55B867 !important
+		& span
+			color #ffffff
+			font-weight normal
+		
+	&-cancel-btm
+		border 1px solid #b73537 !important
+		background-color #DB4F51 !important
+		& span
+			color #ffffff
+			font-weight normal
+
+
+
+@media screen and (min-width : 600px)
+
+	.fIU
+		&-list	
+			&.fTable-list
+			&-item
+				&.fTable-item
+					width 250px
+					display inline-block

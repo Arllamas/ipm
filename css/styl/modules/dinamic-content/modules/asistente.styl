@@ -1,0 +1,271 @@
+// Buscador de historiales de matrícula
+div.results
+	position absolute !important
+	width 100%
+	
+
+	top 0
+	margin-left 60px
+	
+	height 34.2px
+	text-align left
+	
+	& .detalle
+	
+		display inline-block !important
+		width auto
+		height 26px
+		margin-top 7px
+		
+		& .icon3-warning
+			color #DF1A24
+			font-size 1.3em
+			display inline-block !important
+			width auto
+			margin-right 5px
+			
+		& .observaciones
+			position relative
+			top -2px
+			display inline-block !important
+			width auto
+			color royal_blue
+			
+	& .detalle-fecha-limite
+		width auto
+		color royal_blue
+		
+
+
+.reg-item 
+	
+	&-mat
+		width auto
+	
+		
+	&-tipo
+		width 100% !important
+		line-height 33px
+		vertical-align middle
+		font-size .9em
+		font-style italic
+		margin-top -2px
+		padding 0px 0px 0px 0px
+		transition opacity 1s ease
+		display inline-block
+		position relative
+		height 33px
+		overflow hidden
+	
+		&-validate
+			position absolute !important
+			
+			top 6px !important
+			right 203px 
+			width auto !important
+			padding 0px 0 0 !important
+			text-align left !important
+			margin 0 !important
+			border 1px solid green !important
+			transition all 1s ease !important
+			&-input-container
+				position absolute !important
+				width 280px !important
+				display inline-block
+				right 70px
+				border 1px solid marine_aqua
+				height 23px
+				transition all 1s ease !important
+				&.planificado
+					background-color #b8fcb3 !important
+					border 1px solid #3B602A !important
+				&.error
+					background-color #ffbaba !important
+					border 1px solid #DF1A24 !important
+				
+					
+					
+				
+			&-input-icon
+				position absolute !important
+				left 8px
+				top 5px
+				color dark_yellow
+				font-size 1.4em
+				transition all 1s ease !important
+				
+				&.active
+					color white !important
+				&.planificado
+					color #3B602A !important
+				&.error
+					color #DF1A24 !important
+				
+			&-input-label
+				transition all 1s ease !important
+				position absolute !important
+				left 35px
+				top 5px
+				height 23px !important
+				line-height 23px !important
+				padding 0 !important
+				font-size .9em
+				transition opacity 1s ease
+				background-color transparent
+				&.active
+					color white !important
+				&.planificado
+					color #3B602A !important
+					margin 0px !important
+				&.error
+					color #DF1A24 !important
+			
+				
+	
+			&-text
+				font-size .8em
+				// font-weight normal
+				font-style normal
+				width auto !important
+				margin-right 5px !important
+				// display none !important
+			
+		& input
+			position absolute
+			top 6px !important
+			right 8px 
+			text-align left
+			padding 0
+			margin 0
+			font-size 1em
+			color dark_blue !important
+			height 20px
+			border 1px solid royal_blue
+			padding-left 5px !important
+			width 150px !important
+			border-radius 4px
+			&.planificado
+				color #3B602A !important
+				
+			&.date-time
+				width 175px !important
+			
+			
+			
+		
+			
+	
+		&-preventivo
+			background-color #89b1e5
+			font-style normal
+			displat inline-block
+			font-size .9em
+			padding 3px 7px
+			color dark_blue
+			font-weight bold 
+		&-itv
+			background-color #ebf291
+			font-style normal
+			displat inline-block
+			font-size .9em
+			padding 3px 7px
+			color dark_blue
+			font-weight bold 
+		
+			
+		& span
+			
+			display inline-block
+			height 20px
+			line-height 20px
+			transition opacity 1s ease
+			position relative
+			opacity 1 !important
+			width 35px
+			text-align center
+			
+			
+			&:last-child 
+				margin-right 10px 
+			
+			
+			&.tag-active
+				opacity 1
+
+			&.tag-hidden
+				opacity 0 !important
+
+				
+				
+				
+			&.tag-selected
+				opacity 1
+				
+				
+				
+				
+				
+				
+				
+				
+
+	&-menu
+	
+		width auto
+		min-width 50px
+		padding 0
+		flex 1
+		margin 0
+		text-align right
+		&-item
+			padding 0
+			margin 0
+			
+.mat
+	&-icon
+		
+		font-size .5em
+		color dark_yellow
+		background-color #2C64B2
+		
+		display inline-block
+		vertical-align middle
+		
+		width 13px
+		height 16px
+		border-top-left-radius 7px
+		border-bottom-left-radius 7px
+		border-left 2px solid dark_blue
+		border-top 2px solid dark_blue
+		border-bottom 2px solid dark_blue
+		
+		padding-left 3px
+		
+		padding-top 4px
+		padding-bottom 5px
+		
+		& span
+			color stone_gray
+			font-weight bold
+			position relative
+			top 10px
+			font-family arial, helvetica
+			left -7px
+		
+	&-textnum
+		display inline-block
+		width 80px
+		padding 0 7px 0 5px
+		line-height 25px
+		margin-left -5px
+		background-color stone_gray
+		display inline-block
+		border-top-right-radius 7px
+		border-bottom-right-radius 7px
+		color royal_blue
+		border-right 2px solid dark_blue
+		border-top 2px solid dark_blue
+		border-bottom 2px solid dark_blue
+		height 25px
+		vertical-align middle
+	

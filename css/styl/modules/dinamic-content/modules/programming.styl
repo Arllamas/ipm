@@ -1,0 +1,324 @@
+// Página de inicio de programación
+
+// Selector de unidad
+.select-place
+	margin-top 6px
+	min-width 100%
+	&-input
+		border 0
+		border-radius 4px
+		box-sizing border-box
+		height 34px
+		width 100%
+		padding  3px 10px 0px 10px
+		color dark_blue
+		&::-webkit-input-placeholder
+			color royal_blue
+		&::-moz-placeholder
+			position relative 
+			left -40px 
+			color gray_dark_C
+		&:-ms-input-placeholder
+			position relative 
+			left -40px 
+			color gray_dark_C
+		&:-moz-placeholder 
+			position relative 
+			left -40px 
+			color gray_dark_C
+	&-container
+		background-color marine_aqua
+		border-radius 4px
+		box-sizing border-box
+		padding  7px 8px 7px 50px
+		position relative
+	&-icon
+		font-size 27px
+		position absolute
+		top 11px
+		left 11px
+		color white
+	
+	&-results
+		display none
+		box-sizing border-box
+		text-align left
+		margin-top 10px
+			
+		&-list
+			list-style none
+			padding 0
+			margin 0
+		&-item
+			margin-right 4px
+			padding 0
+			display inline-block
+			margin-bottom 9px
+		&-item:last-child
+			margin-bottom 0px	
+		&-link
+			background-color marine_aqua
+			border-radius 4px
+			color stone_gray
+			text-decoration none
+			box-sizing border-box
+			display inline-block
+			font-size 1em
+			padding 6px 8px 6px 8px	
+
+// Boton de acceso a formularios de programación
+
+.select-action
+	min-width 100%
+	list-style none
+	background transparent
+	
+	&-text
+		font-size .9em
+		
+	&-list
+		margin 0
+		padding-left 0
+		
+	&-item
+		display inline-block
+		vertical-align top
+		padding 0
+		opacity .5
+		background royal_blue
+		box-sizing border-box
+		text-align center
+		height 110px
+		border-radius 4px
+		padding-left 22px
+		padding 0
+		box-sizing border-box
+		transition .3s
+		&.is-active
+			background-color dark_blue
+			opacity 1
+			transition .3s
+		&-unit
+			float left	
+		&-assistance
+			float right
+ 
+	&-button
+		text-align center
+		display block;
+		position relative
+		color stone_gray
+		display inline-block
+		font-size .9em
+		width 115px
+		padding 0
+		opacity 1
+		padding-top 70px
+		height 10px
+		line-height 15px
+		font-weight bold
+		&.is-active
+			color dark_yellow
+			text-decoration none
+	&-icon 
+		font-size 4em
+		position absolute
+		left 28px
+		top 8px
+		color stone_gray
+		&.is-active
+			color dark_yellow
+
+/// Ajuste de texto del boton 'VISITA UNIDAD'
+.text-unit
+	position relative
+	top 7px		
+	
+
+// Página de Programacion actuaciones en unidad
+// Formulario P. Visita en unidad
+.smartphones-off
+	display none
+		
+.add-buttom
+	padding 4px 10px 2px 10px
+.add-text
+	display none
+
+.fUnit
+	&-colRight
+		width 31%
+		display inline-block
+		float right
+		display none
+		
+	&-colLeft	
+		//border-right 1px solid stone_gray
+		width 100%
+		display inline-block
+		float left
+		//padding-right 4.6%
+		box-sizing border-box
+	&-item
+		width 70%
+		display block
+		float right
+		&-reg
+			width 25%
+			display inline-block
+			vertical-align top
+			float left
+			&-first-label
+				visibility hidden
+		&-label
+		
+		&-textarea
+			height 100px
+			max-height 100px
+				
+			
+// Página de Programacion asistencia en carretera
+// Formulario P. asistencia en carretera
+.fAssistance
+	&-item
+		display block
+	&-item-datetime
+		width 100%
+	&-item-reg
+		width 100%
+		display inline-block
+	&-item-phone
+		width 100%
+		display inline-block
+		float right
+	&-item-typeroad
+		width 100%
+		display inline-block
+		float left
+		
+	&-item-nameroad
+		width 100%
+		display inline-block
+		
+	&-item-numberroad
+		width 100%
+		display inline-block
+		float right
+
+		
+		
+	&-item-detalle
+		width 100%
+		display inline-block
+		float right
+	&-item-descripcion
+		width 100%
+		display inline-block
+		float right
+		
+
+// @MEDIAQUERY Responsive Design 	
+
+@media screen and (min-width : 767px)
+	.fAssistance
+		&-item
+			display block
+		&-item-datetime
+			width 42% !important
+			display inline-block
+			float left
+		&-item-reg
+			width 23% !important
+			display inline-block
+		&-item-phone
+			width 32% !important
+			display inline-block
+			float right
+		&-item-typeroad
+			width 15% !important
+			display inline-block
+			float left
+			
+		&-item-nameroad
+			width 70% !important
+			display inline-block
+		&-item-numberroad
+			width 12% !important
+			display inline-block
+			float right
+
+		&-item-detalle
+			width 100%
+			display inline-block
+			float right
+
+		&-item-descripcion
+			width 100%
+			display inline-block
+			float right
+
+		
+	// Página de inicio de programación
+	.smartphones-off
+		display inline
+	// Selector de unidad
+	// Formulario P. Visita en unidad
+	.add-buttom
+		padding inherit
+		padding-bottom 1px
+	.add-text
+		display inline
+	
+	.select-place
+		margin-top 50px
+		position relative
+		text-align center
+		min-width 60% 
+		&-results
+			&-item
+				margin-bottom 0px
+		
+
+	// Boton de acceso a formularios de programación
+	.fAssistance
+		&-item
+			display block
+		&-item-datetime
+			width 100%
+		&-item-reg
+			width 100%
+			display inline-block
+		&-item-phone
+			width 100%
+			display inline-block
+			float right
+		&-item-typeroad
+			width 100%
+			display inline-block
+			float left
+			
+		&-item-nameroad
+			width 100%
+			display inline-block
+		&-item-numberroad
+			width 100%
+			display inline-block
+			float right
+				
+	.select-action
+		margin-top 20px
+		text-align center
+		min-width 60% 
+		&-item
+			padding 14px 20px
+			height 150px
+		&-icon
+			font-size 6em
+		&-button
+			padding-top 97px
+			height 30px	
+	
+		&-icon
+			position absolute
+			left 15px
+			top 0

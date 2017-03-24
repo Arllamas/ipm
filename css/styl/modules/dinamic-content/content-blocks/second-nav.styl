@@ -1,0 +1,63 @@
+.second-nav
+	background-color dark_yellow
+	width 100%
+	z-index 1
+	transition 1s
+	position fixed
+	top 73px
+	&.hidden
+		position realtive
+		top -20px
+		
+	&-title
+		color royal_blue
+		font-size second-nav-title
+		height 35px
+		line-height 35px
+		margin 0
+		text-align center
+		font-weight bold
+		&-p
+			display none
+	&-text
+		display none
+		
+	
+				
+	&-button
+		position absolute
+		line-height auto
+		right 10px
+		text-decoration none
+	&-icon
+		font-size 12px
+		position relative
+		top 1px
+		
+	&-breadcrumb
+		position absolute
+		line-height auto
+		left 10px
+		top 4px
+		text-decoration none
+		color marine_aqua
+		font-size 1em
+		&-icon
+			font-size 1.2em
+			position relative
+			top 2px
+			
+		
+   
+
+@media screen and (min-width : 767px)
+	.second-nav
+		transition 1s
+		&-title-p
+			display block
+		&-text
+			display inline
+			
+
+	.second-nav-link
+		display block	

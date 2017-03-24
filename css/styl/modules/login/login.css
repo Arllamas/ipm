@@ -1,0 +1,488 @@
+* {
+  outline: none;
+}
+/* normalize.css v3.0.0 | MIT License | git.io/normalize */
+html {
+  font-family: 'Roboto';
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  background: #f1f1f1;
+  font-size: 16px;
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0;
+  display: inline-block;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+@font-face {
+  font-family: 'ipmotor';
+  src: url("../fonts/ipmotor/ipmotor.eot?jj2aww");
+  src: url("../fonts/ipmotor/ipmotor.eot?#iefixjj2aww") format('embedded-opentype'), url("../fonts/ipmotor/ipmotor.woff?jj2aww") format('woff'), url("../fonts/ipmotor/ipmotor.ttf?jj2aww") format('truetype'), url("../fonts/ipmotor/ipmotor.svg?jj2aww#ipmotor") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'ipmotor';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-mat:before {
+  content: "\e605";
+}
+.icon-logo:before {
+  content: "\e607";
+}
+.icon-eye:before {
+  content: "\e608";
+}
+.icon-search-file:before {
+  content: "\e606";
+}
+.icon-assistance:before {
+  content: "\e600";
+}
+.icon-unit:before {
+  content: "\e603";
+}
+.icon-flechita:before {
+  content: "\e604";
+}
+.icon-tires:before {
+  content: "\e601";
+}
+.icon-pin:before {
+  content: "\e602";
+}
+.icon-operative:before {
+  content: "\f03a";
+}
+.icon-drop-down:before {
+  content: "\f0a3";
+}
+.icon-breadcrumb:before {
+  content: "\f078";
+}
+.icon-settings:before {
+  content: "\f02f";
+}
+.icon-edit:before {
+  content: "\f058";
+}
+.icon-add:before {
+  content: "\f05d";
+}
+.icon-menu:before {
+  content: "\f05e";
+}
+.icon-delete:before {
+  content: "\f0d5";
+}
+.icon-breakdown:before {
+  content: "\f081";
+}
+.icon-ticket:before {
+  content: "\e939";
+}
+.icon-programmed:before {
+  content: "\e94e";
+}
+.icon-download:before {
+  content: "\e960";
+}
+.icon-save:before {
+  content: "\e962";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-key:before {
+  content: "\e98d";
+}
+.icon-repair:before {
+  content: "\e991";
+}
+.icon-stats:before {
+  content: "\e99c";
+}
+.icon-exit:before {
+  content: "\ea14";
+}
+.icon-creased:before {
+  content: "\ea42";
+}
+.icon-unfolded:before {
+  content: "\ea43";
+}
+.icon-item:before {
+  content: "\ea54";
+}
+@font-face {
+  font-family: 'franklin_bookit';
+  src: url("../fonts/franklin-gothic/book-italic/FranklinGothic-BookIt-webfont.eot");
+  src: url("../fonts/franklin-gothic/book-italic/FranklinGothic-BookIt-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/franklin-gothic/book-italic/FranklinGothic-BookIt-webfont.woff2") format('woff2'), url("../fonts/franklin-gothic/book-italic/FranklinGothic-BookIt-webfont.woff") format('woff'), url("../fonts/franklin-gothic/book-italic/FranklinGothic-BookIt-webfont.ttf") format('truetype'), url("../fonts/franklin-gothic/book-italic/FranklinGothic-BookIt-webfont.svg#franklin_gothic_fsbook_italic") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'franklin_book';
+  src: url("../fonts/franklin-gothic/book/FranklinGothic-Book-webfont.eot");
+  src: url("../fonts/franklin-gothic/book/FranklinGothic-Book-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/franklin-gothic/book/FranklinGothic-Book-webfont.woff2") format('woff2'), url("../fonts/franklin-gothic/book/FranklinGothic-Book-webfont.woff") format('woff'), url("../fonts/franklin-gothic/book/FranklinGothic-Book-webfont.ttf") format('truetype'), url("../fonts/franklin-gothic/book/FranklinGothic-Book-webfont.svg#franklin_gothic_fsbook") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'franklin_demiit';
+  src: url("../fonts/franklin-gothic/demi-italic/FranklinGothic-DemiIt-webfont.eot");
+  src: url("../fonts/franklin-gothic/demi-italic/FranklinGothic-DemiIt-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/franklin-gothic/demi-italic/FranklinGothic-DemiIt-webfont.woff2") format('woff2'), url("../fonts/franklin-gothic/demi-italic/FranklinGothic-DemiIt-webfont.woff") format('woff'), url("../fonts/franklin-gothic/demi-italic/FranklinGothic-DemiIt-webfont.ttf") format('truetype'), url("../fonts/franklin-gothic/demi-italic/FranklinGothic-DemiIt-webfont.svg#franklin_gothic_fsdemi_italic") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'franklin_demi';
+  src: url("../fonts/franklin-gothic/demi/FranklinGothic-Demi-webfont.eot");
+  src: url("../fonts/franklin-gothic/demi/FranklinGothic-Demi-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/franklin-gothic/demi/FranklinGothic-Demi-webfont.woff2") format('woff2'), url("../fonts/franklin-gothic/demi/FranklinGothic-Demi-webfont.woff") format('woff'), url("../fonts/franklin-gothic/demi/FranklinGothic-Demi-webfont.ttf") format('truetype'), url("../fonts/franklin-gothic/demi/FranklinGothic-Demi-webfont.svg#franklin_gothic_fsdemi") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.canvas {
+  overflow: hidden;
+  position: relative;
+}
+.canvas-main {
+  overflow: hidden;
+  color: gray_dark_C;
+}
+.canvas-dinamic {
+  text-align: center;
+}
+.seccion-container {
+  padding: 10px;
+  width: 100%;
+  display: inline-block;
+  margin-top: 80px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.seccion-container.form {
+  margin-top: 0;
+}
+body {
+  font-family: 'Roboto';
+}
+.login {
+  margin: 0 auto;
+  width: 300px;
+}
+.login-header {
+  width: 100%;
+  font: 0.8em sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  background: gray_dark_A;
+  color: gray_B;
+  padding: 10px;
+}
+.login-form {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.login-form-item {
+  margin-top: 0px;
+  position: relative;
+}
+.login-form-input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  background-color: gray_A;
+  color: gray_B;
+  padding-left: 45px;
+  font-size: 1em;
+}
+.login-form-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding-right: 8px;
+  border-right: 1px solid #ccc;
+  color: gray_dark_B;
+  height: 19px;
+}
+.login-form-label-text {
+  display: none;
+}
+.login-form-buttom {
+  background-color: gray_dark_B;
+  color: gray_A;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  border: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 0;
+}
+::-webkit-input-placeholder {
+  padding-left: 0px;
+  position: static;
+  color: gray_dark_C;
+}
+::-moz-placeholder {
+  padding-left: 0px;
+  position: static;
+  color: gray_dark_C;
+}
+:-ms-input-placeholder {
+  padding-left: 0px;
+  position: static;
+  color: gray_dark_C;
+}
+input:-moz-placeholder {
+  padding-left: 0px;
+  position: static;
+  color: gray_dark_C;
+}
+input:hover::-webkit-input-placeholder {
+  padding-left: 0px;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -o-transition: 0s;
+  -ms-transition: 0s;
+  transition: 0s;
+}
+input:hover:-moz-placeholder {
+  padding-left: 0px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+input:hover::-moz-placeholder {
+  padding-left: 0px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+input:hover:-ms-input-placeholder {
+  padding-left: 0px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+input:focus::-webkit-input-placeholder {
+  padding-left: 0px;
+}
+input:focus:-moz-placeholder {
+  padding-left: 0px;
+}
+input:focus::-moz-placeholder {
+  padding-left: 0px;
+}
+input:focus:-ms-input-placeholder {
+  padding-left: 0px;
+}
